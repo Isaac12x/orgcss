@@ -263,6 +263,28 @@ kbd {
     line-height: 1;
 }
 
+.started {
+    background-color: orange;
+    color: white;
+    padding: .1em 0.3em;
+    border-radius: 3px;
+    background-clip: padding-box;
+    font-size: $code-size;
+    font-family: $monospace;
+    line-height: 1;
+}
+
+.in-progress {
+    background-color: orange;
+    color: white;
+    padding: .1em 0.3em;
+    border-radius: 3px;
+    background-clip: padding-box;
+    font-size: $code-size;
+    font-family: $monospace;
+    line-height: 1;
+}
+
 .priority {
     color: orange;
     font-family: $monospace;

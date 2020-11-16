@@ -35,21 +35,21 @@ function serve(done) {
 }
 
 function pages() {
-  const f = $filter('src/ref_bib.html', {restore: true});
-  return $.src(['src/index.html', 'src/ref_bib.html'])
-    .pipe($changed('build'))
-    .pipe($plumber())
-    .pipe($htmlmin({
-      removeComments: true,
-      collapseWhitespace: true,
-      removeEmptyAttributes: true,
-      minifyJS: true,
-      minifyCSS: true}))
-    .pipe(f)
-    // .pipe($replace('ref.html', 'index.html'))
-    .pipe(f.restore)
-    .pipe($.dest('build'));
-}
+//   const f = $filter('src/ref_bib.html', {restore: true});
+//   return $.src(['src/index.html', 'src/ref_bib.html'])
+//     .pipe($changed('build'))
+//     .pipe($plumber())
+//     .pipe($htmlmin({
+//       removeComments: true,
+//       collapseWhitespace: true,
+//       removeEmptyAttributes: true,
+//       minifyJS: true,
+//       minifyCSS: true}))
+//     .pipe(f)
+//     // .pipe($replace('ref.html', 'index.html'))
+//     .pipe(f.restore)
+//     .pipe($.dest('build'));
+ }
 
 function styles() {
   return $.src(['src/css/org-default.css', 'src/css/org.css'])
